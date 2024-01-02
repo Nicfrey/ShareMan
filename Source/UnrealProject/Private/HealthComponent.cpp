@@ -55,6 +55,11 @@ void UHealthComponent::Die()
 	bIsAlive = false;
 }
 
+int UHealthComponent::GetRemainingLife() const
+{
+	return M_Health;
+}
+
 void UHealthComponent::DoDamage_Implementation()
 {
 	--M_Health;

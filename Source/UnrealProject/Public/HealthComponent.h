@@ -38,6 +38,8 @@ public:
 	void Revive();
 	UFUNCTION(BlueprintCallable)
 	void Die();
+	UFUNCTION(BlueprintCallable)
+	int GetRemainingLife() const;
 
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeathSignature);
 	UPROPERTY(BlueprintAssignable)
